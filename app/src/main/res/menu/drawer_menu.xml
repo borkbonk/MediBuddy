@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_calendar"
+            android:title="Calendar"
+            android:icon="@drawable/baseline_calendar_month_24"/>
+        <item
+            android:id="@+id/nav_alarm"
+            android:icon="@drawable/baseline_alarm_24"
+            android:title="Reminders" />
+        <item android:id="@+id/nav_chat"
+            android:title="Chat"
+            android:icon="@drawable/baseline_chat_24"
+            />
+        <item android:id="@+id/nav_notes"
+            android:icon="@drawable/baseline_note_add_24"
+            android:title="Notes"/>
+        <item android:id="@+id/settings"
+            android:title="Settings"
+            android:icon="@drawable/baseline_settings_24"/>
+    </group>
+</menu>

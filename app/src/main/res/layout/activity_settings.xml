@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4fbfa"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Set Emergency Phone Number -->
+    <EditText
+        android:id="@+id/editTextEmergencyNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittexts"
+        android:hint="Enter Emergency Phone Number"
+        android:inputType="phone"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp" />
+
+    <!-- Save Emergency Phone Number -->
+
+    <!-- Clear Database -->
+
+    <Button
+        android:id="@+id/btnSetEmergencyNumber"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_dark"
+        android:text="Save Emergency Number"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        app:iconTint="@null" />
+
+    <Button
+        android:id="@+id/btnClearDatabase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/setting_delete"
+        android:text="Clear Reminder Database"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"
+
+        app:iconTint="@null" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/setting_logout"
+        android:text="Logout"
+        android:textColor="@color/black"
+        app:backgroundTint="@null" />
+</LinearLayout>

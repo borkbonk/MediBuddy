@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4fbfa"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".calendar.RemindersForDateActivity">
+
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="#e4fbfa"
+        android:padding="16dp"
+        android:paddingHorizontal="10dp"
+
+        app:forwardButtonSrc="@drawable/baseline_arrow_right_24"
+        app:headerColor="#77B3AF"
+        app:pagesColor="#c4f7f4"
+        app:previousButtonSrc="@drawable/baseline_arrow_left_24"
+        app:selectionColor="@color/black"
+        app:abbreviationsBarColor="#c4f7f4"
+        app:selectionLabelColor="@color/white"
+        android:elevation="5dp"
+        app:headerLabelColor="@color/black"
+
+        >
+
+    </com.applandeo.materialcalendarview.CalendarView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRemindersForDate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/item_reminder" />
+
+</LinearLayout>

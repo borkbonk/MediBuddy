@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4fbfa"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".reminder.Reminder">
+
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_button"
+        android:hint="  Title"
+        android:layout_gravity="center"
+        android:inputType="textCapSentences"
+        android:maxLines="1"
+        android:textSize="18sp"
+        android:paddingLeft="20dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="330dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/setting_button"
+        android:hint="  Description"
+        android:inputType="textCapSentences"
+        android:maxLines="3"
+        android:textSize="16sp"
+        android:paddingLeft="20dp"
+        />
+
+    <Button
+        android:id="@+id/buttonSetDateTime"
+        android:layout_width="300dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_accent"
+        android:text="Set Date and Time"
+        app:backgroundTint="@null"
+        app:iconTint="@null" />
+
+    <Button
+        android:id="@+id/buttonAddReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_accent"
+        android:text="Add Reminder"
+        app:backgroundTint="@null" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewReminders"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/item_reminder" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

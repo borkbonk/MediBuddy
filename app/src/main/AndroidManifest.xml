@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MediBuddy"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.0miniproj"
+        tools:targetApi="31">
+        <activity
+            android:name=".calendar.RemindersForDateActivity"
+            android:exported="false" />
+        <activity android:name=".settings"
+            android:exported="false"/>
+        <activity
+            android:name=".reminder.Reminder"
+            android:exported="false" />
+
+        <receiver
+            android:name=".reminder.AlarmReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name=".reminder.StopRingtoneReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name=".reminder.RingtoneService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".gpt.gpt"
+            android:exported="false" />
+        <activity
+            android:name=".reminder.EditReminderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".notes.notedetail"
+            android:exported="false" />
+        <activity
+            android:name=".notes.NoteAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".notes.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".notes.CreateAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".notes.Notes"
+            android:exported="false" />
+        <activity
+            android:name=".Alarm"
+            android:exported="false" />
+        <activity
+            android:name=".drawerbase"
+            android:exported="false" />
+        <activity
+            android:name=".notes.splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

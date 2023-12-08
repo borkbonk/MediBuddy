@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Auto layout, variables, and unit scale are not yet supported -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="183dp"
+    android:height="63dp"
+    android:viewportWidth="183"
+    android:viewportHeight="63" >
+
+    <group>
+        <clip-path
+            android:pathData="M10 0H173C178.523 0 183 4.47715 183 10V53C183 58.5228 178.523 63 173 63H10C4.47715 63 0 58.5228 0 53V10C0 4.47715 4.47715 0 10 0Z" />
+        <path
+            android:pathData="M0 0V63H183V0"
+            android:fillColor="#77B3AF" />
+    </group>
+</vector>
